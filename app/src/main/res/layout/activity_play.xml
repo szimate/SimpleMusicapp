@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_match"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/image_position"
+    tools:context="com.example.android.simplemusicapp.PlayActivity">
+
+    <LinearLayout
+        android:id="@+id/details"
+        style="@style/Layout_match">
+
+        <Button
+            android:id="@+id/main_menu"
+            style="@style/Layout_wrap"
+            android:layout_gravity="center"
+            android:text="@string/menu" />
+
+        <ImageView
+            android:contentDescription="@string/cover"
+            android:id="@+id/cover_d"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="@dimen/text"
+            android:src="@drawable/hifi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artist_d"
+                style="@style/Layout_txt"
+                android:text="@string/artist" />
+
+            <TextView
+                android:id="@+id/album_d"
+                style="@style/Layout_txt_title"
+                android:text="@string/title" />
+
+            <LinearLayout
+                style="@style/Layout_match_wrap"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/Layout_match_wrap"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Layout_wrap"
+                        android:text="@string/start" />
+
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/duration_d"
+                        style="@style/Layout_wrap"
+                        android:text="@string/duration" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Layout_txt"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:contentDescription="@string/like"
+                        android:id="@+id/like"
+                        style="@style/Layout_image"
+                        android:background="@drawable/love" />
+
+                    <ImageButton
+                        android:contentDescription="@string/back"
+                        android:id="@+id/back"
+                        style="@style/Layout_image_position"
+                        android:background="@drawable/backward" />
+
+                    <ImageButton
+                        android:contentDescription="@string/play"
+                        android:id="@+id/play"
+                        style="@style/Layout_image_position"
+                        android:background="@drawable/play" />
+
+                    <ImageButton
+                        android:contentDescription="@string/next"
+                        android:id="@+id/next"
+                        style="@style/Layout_image_position"
+                        android:background="@drawable/forward" />
+
+                    <ImageButton
+                        android:contentDescription="@string/shuffle"
+                        android:id="@+id/shuffle"
+                        style="@style/Layout_image_position"
+                        android:background="@drawable/shuffle" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

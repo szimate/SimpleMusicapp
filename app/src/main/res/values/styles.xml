@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Layout_match" parent="Base.Theme.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout_wrap" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_match_wrap" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_image" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout_width">@dimen/image</item>
+        <item name="android:layout_height">@dimen/image</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout_image_position" parent="Layout_image">
+        <item name="android:layout_marginStart">@dimen/image_position</item>
+    </style>
+
+    <style name="Layout_txt" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text</item>
+    </style>
+
+    <style name="Layout_txt_title" parent="Layout_txt">
+        <item name="android:textSize">@dimen/txt_title</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Main" parent="AlertDialog.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layoutHeight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">#A8A8</item>
+
+    </style>
+
+</resources>
