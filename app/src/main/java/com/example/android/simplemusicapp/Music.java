@@ -4,7 +4,7 @@ package com.example.android.simplemusicapp;
  * Created by Xan on 2018. 03. 26..
  */
 
-public class Word {
+public class Music {
     //type of the music
     private String mType;
     //artist of the music
@@ -12,7 +12,7 @@ public class Word {
     //cover of the music
     private int mCover;
 
-    public Word(String type, String artist, int cover) {
+    public Music(String type, String artist, int cover) {
         mType = type;
         mArtist = artist;
         mCover = cover;

@@ -20,21 +20,21 @@ public class MusicActivity extends AppCompatActivity {
         // Set the content of the activity to use the list_word.xml layout file
         setContentView(R.layout.list_word);
 
-        final ArrayList<Word> words = new ArrayList<>();
-        // Create  a list of words
-        words.add(new Word("Open Your Eyes", "Carl Cox", R.drawable.hifi));
-        words.add(new Word("Serenity", "Armin van Buuren", R.drawable.hifi));
-        words.add(new Word("B3X", "Len Faki", R.drawable.hifi));
-        words.add(new Word("I Go Out", "Debora De Lucha", R.drawable.hifi));
-        words.add(new Word("Harder Better Faster Stronger", "Draft Punk", R.drawable.hifi));
-        words.add(new Word("Traffic", "Tiesto", R.drawable.hifi));
-        words.add(new Word("Dance I said", "Eric Morillo", R.drawable.hifi));
-        words.add(new Word("On my way", "Tiesto", R.drawable.hifi));
-        words.add(new Word("Right here, Right now", "Fat Boy Slim", R.drawable.hifi));
-        words.add(new Word("Extasy", "ATB", R.drawable.hifi));
+        final ArrayList<Music> music = new ArrayList<>();
+        // Create  a list of music
+        music.add(new Music("Open Your Eyes", "Carl Cox", R.drawable.hifi));
+        music.add(new Music("Serenity", "Armin van Buuren", R.drawable.hifi));
+        music.add(new Music("B3X", "Len Faki", R.drawable.hifi));
+        music.add(new Music("I Go Out", "Debora De Lucha", R.drawable.hifi));
+        music.add(new Music("Harder Better Faster Stronger", "Draft Punk", R.drawable.hifi));
+        music.add(new Music("Traffic", "Tiesto", R.drawable.hifi));
+        music.add(new Music("Dance I said", "Eric Morillo", R.drawable.hifi));
+        music.add(new Music("On my way", "Tiesto", R.drawable.hifi));
+        music.add(new Music("Right here, Right now", "Fat Boy Slim", R.drawable.hifi));
+        music.add(new Music("Extasy", "ATB", R.drawable.hifi));
 
-        // Create a WordAdapter
-        WordAdapter adapter = new WordAdapter(this, words);
+        // Create a MusicAdapter
+        MusicAdapter adapter = new MusicAdapter(this, music);
         // Set the listView
         ListView listView = findViewById(R.id.list);
         //  Set the adapter

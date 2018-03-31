@@ -6,11 +6,12 @@
     android:orientation="vertical">
 
     <ImageView
+        android:contentDescription="@string/cover"
         android:id="@+id/cover"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="10dp"
-        android:contentDescription="@string/cover" />
+        android:layout_width="@dimen/image"
+        android:layout_height="@dimen/image"
+        android:layout_marginEnd="@dimen/image_position"
+        android:layout_marginRight="@dimen/image_position" />
 
     <TextView
         android:id="@+id/type"
@@ -18,7 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/cover"
         android:textSize="20sp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/cover" />
 
     <TextView
         android:id="@+id/artist"
@@ -27,6 +29,7 @@
         android:layout_below="@id/type"
         android:layout_toEndOf="@id/cover"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/cover" />
 
 </RelativeLayout>

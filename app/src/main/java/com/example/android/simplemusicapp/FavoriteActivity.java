@@ -20,15 +20,15 @@ public class FavoriteActivity extends AppCompatActivity {
         // Set the content of the activity to use the list_word.xml layout file
         setContentView(R.layout.list_word);
 
-        ArrayList<Word> words = new ArrayList<>();
-        // Create  a list of words
-        words.add(new Word("I Go Out", "Debora De Lucha", R.drawable.hifi));
-        words.add(new Word("Harder Better Faster Stronger", "Draft Punk", R.drawable.hifi));
-        words.add(new Word("Traffic", "Tiesto", R.drawable.hifi));
-        words.add(new Word("Dance I said", "Eric Morillo", R.drawable.hifi));
+        ArrayList<Music> music = new ArrayList<>();
+        // Create  a list of music
+        music.add(new Music("I Go Out", "Debora De Lucha", R.drawable.hifi));
+        music.add(new Music("Harder Better Faster Stronger", "Draft Punk", R.drawable.hifi));
+        music.add(new Music("Traffic", "Tiesto", R.drawable.hifi));
+        music.add(new Music("Dance I said", "Eric Morillo", R.drawable.hifi));
 
-        // Create a WordAdapter
-        WordAdapter adapter = new WordAdapter(this, words);
+        // Create a MusicAdapter
+        MusicAdapter adapter = new MusicAdapter(this, music);
         // Set the listView
         ListView listView = findViewById(R.id.list);
         //  Set the adapter

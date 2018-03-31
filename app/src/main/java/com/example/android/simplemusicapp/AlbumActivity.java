@@ -18,16 +18,16 @@ public class AlbumActivity extends AppCompatActivity {
         // Set the content of the activity to use the list_word.xml layout file
         setContentView(R.layout.list_word);
 
-        ArrayList<Word> words = new ArrayList<>();
-        // Create  a list of words
-        words.add(new Word("House", "4", R.drawable.house));
-        words.add(new Word("Minimal", "1", R.drawable.minimal));
-        words.add(new Word("Dance", "1", R.drawable.dance));
-        words.add(new Word("Techno", "2", R.drawable.hifi));
-        words.add(new Word("Trance", "3", R.drawable.trance));
+        ArrayList<Music> music = new ArrayList<>();
+        // Create  a list of music
+        music.add(new Music("House", "4", R.drawable.house));
+        music.add(new Music("Minimal", "1", R.drawable.minimal));
+        music.add(new Music("Dance", "1", R.drawable.dance));
+        music.add(new Music("Techno", "2", R.drawable.hifi));
+        music.add(new Music("Trance", "3", R.drawable.trance));
 
-        // Create a WordAdapter
-        WordAdapter adapter = new WordAdapter(this, words);
+        // Create a MusicAdapter
+        MusicAdapter adapter = new MusicAdapter(this, music);
         // Set the listView
         ListView listView = findViewById(R.id.list);
         //  Set the adapter

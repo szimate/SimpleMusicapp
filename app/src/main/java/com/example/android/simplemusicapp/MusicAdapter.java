@@ -15,11 +15,11 @@ import java.util.ArrayList;
  */
 
 
-public class WordAdapter extends ArrayAdapter<Word> {
+public class MusicAdapter extends ArrayAdapter<Music> {
 
-    public WordAdapter(Activity context, ArrayList<Word> words) {
-        // Initialize the WordAdapter's internal storage
-        super(context, 0, words);
+    public MusicAdapter(Activity context, ArrayList<Music> music) {
+        // Initialize the MusicAdapter's internal storage
+        super(context, 0, music);
     }
 
     @Override
@@ -29,19 +29,19 @@ public class WordAdapter extends ArrayAdapter<Word> {
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
-        // Get the {@link Word} object located at this position in the list
-        Word currentWord = getItem(position);
+        // Get the {@link Music} object located at this position in the list
+        Music currentMusic = getItem(position);
         // Find the TextView in the list_item.xml layout with the ID type
         TextView nameMiwok = listItemView.findViewById(R.id.type);
-        nameMiwok.setText(currentWord.getmType());
+        nameMiwok.setText(currentMusic.getmType());
 
         // Find the TextView in the list_item.xml layout with the ID artist
         TextView nameDefault = listItemView.findViewById(R.id.artist);
-        nameDefault.setText(currentWord.getmArtist());
+        nameDefault.setText(currentMusic.getmArtist());
 
         // Find the TextView in the list_item.xml layout with the ID cover
         ImageView nameCover = listItemView.findViewById(R.id.cover);
-        nameCover.setImageResource(currentWord.getmCover());
+        nameCover.setImageResource(currentMusic.getmCover());
 
         return listItemView;
     }
